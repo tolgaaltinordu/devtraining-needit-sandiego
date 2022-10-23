@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="5" type="collection">
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="29" type="collection">
         <element label="New field 3" max_length="40" name="u_new_field3" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
         <element attributes="encode_utf8=false" label="New Reference" max_length="32" name="u_reference_8" reference="cmdb_ci_appl_dot_net" type="reference"/>
         <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_fo" reference="sys_user" type="reference"/>
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Requested for" mandatory="true" max_length="1024" name="u_requested_for" reference="sys_user" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="Requested for email" mandatory="true" max_length="40" name="u_requested_for_email" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_requesttype" type="string">
             <choice>
                 <element inactive="true" inactive_on_update="true" label="-TBDVALUE-Legal 2" sequence="0"/>
